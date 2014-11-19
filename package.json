@@ -1,0 +1,28 @@
+{
+  "name": "human-face-animal-body",
+  "version": "0.0.1",
+  "description": "office jock human face and animal body",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "office",
+    "joke",
+    "human-face",
+    "animal-body"
+  ],
+  "author": "teamrun",
+  "license": "mit",
+  "dependencies": {
+    "css-loader": "^0.9.0",
+    "extract-text-webpack-plugin": "^0.3.4",
+    "jsx-loader": "^0.12.1",
+    "less": "^1.7.5",
+    "less-loader": "^0.7.7",
+    "raw-loader": "^0.5.1",
+    "react": "^0.12.0",
+    "style-loader": "^0.8.2",
+    "webpack": "^1.4.13"
+  }
+}
