@@ -43,6 +43,9 @@ body{
             bottom: 0;
             transition: opacity 200ms ease;
         }
+        .img-viewer{
+            z-index: 50;
+        }
     }
     
     .img-viewer{
@@ -51,10 +54,17 @@ body{
         left: 0;
         bottom: 0;
         right: 0;
-        z-index: 50;
+        z-index: 500;
         cursor: move;
         opacity: 0.1;
 
-//        .tst(height 200ms ease, width 200ms ease;);
+        /*
+         * tst对于操作来说很复杂啊
+         * 首先, 拖拽的时候不能带有tst, 否则就会有duration长的延迟
+         * ok, 我们把位移的tst去掉, 只留宽高的可以吧?
+         * 也不可以, 只有宽高, 就会出现放大缩小时的颤抖: top/left先变化, 宽高缓动...
+         * 所以还是在js里动态的调整吧
+         */
+        .tst(height 200ms ease, width 200ms ease;);
     }
 }
