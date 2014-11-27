@@ -1,0 +1,49 @@
+/* line 1, /Users/chenllos/Documents/dev/souche/help/human-face-animal-body/layout/less/layout.less */
+body {
+  display: block;
+  margin: 0;
+  overflow: hidden;
+}
+/* line 13, /Users/chenllos/Documents/dev/souche/help/human-face-animal-body/layout/less/layout.less */
+.img-viewer-ctn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 200;
+}
+/* line 21, /Users/chenllos/Documents/dev/souche/help/human-face-animal-body/layout/less/layout.less */
+.img-viewer-ctn:after {
+  content: 'Loading...';
+  position: absolute;
+  top: 0;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  font-size: 3em;
+  color: #fff;
+  line-height: 10em;
+  text-align: center;
+  z-index: 100;
+  opacity: 0;
+  background-color: #97accc;
+  transition: opacity 200ms ease, bottom 0ms ease 200ms;
+}
+/* line 41, /Users/chenllos/Documents/dev/souche/help/human-face-animal-body/layout/less/layout.less */
+.img-viewer-ctn.loading:after {
+  opacity: 1;
+  bottom: 0;
+  transition: opacity 200ms ease;
+}
+/* line 48, /Users/chenllos/Documents/dev/souche/help/human-face-animal-body/layout/less/layout.less */
+.img-viewer-ctn .img-viewer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 50;
+  cursor: move;
+  opacity: 0.1;
+}
